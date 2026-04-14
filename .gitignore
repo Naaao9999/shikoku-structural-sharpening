@@ -1,0 +1,27 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+
+# Research outputs
+output/figures/*
+output/tables/*
+!output/figures/.gitkeep
+!output/tables/.gitkeep
+
+# User-supplied raw data
+data/raw/municipality_shapefile/*
+data/raw/intermunicipal_io_tables/*
+!data/raw/municipality_shapefile/.gitkeep
+!data/raw/intermunicipal_io_tables/.gitkeep
+
+# Local notes
+memo.txt

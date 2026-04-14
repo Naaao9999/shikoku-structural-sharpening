@@ -1,0 +1,8 @@
+pandas
+numpy
+matplotlib
+geopandas
+scipy
+pymc
+arviz
+openpyxl
