@@ -7,7 +7,7 @@
 
 **Structural sharpening and functional dependence: a long-run interregional input--output analysis of Shikoku as a peripheral case in Japan**
 
-四国地域を対象に、1985年、1990年、1995年、2005年の経済産業省地域間産業連関表を用いて、長期的な産業構造変化、地域内価値保持、域外依存、空間的可視化を分析します。再現の中心は、論文で用いた3段階の Notebook ワークフローです。
+四国地域を対象に、1985年、1990年、1995年、2005年の経済産業省公表の地域間産業連関表を用いて、長期的な産業構造変化、地域内価値保持、域外依存、空間的可視化を分析します。再現の中心は、論文で用いた3段階の Notebook ワークフローです。
 
 本リポジトリで再現する主な内容は次のとおりです。
 
@@ -17,35 +17,35 @@
 - 漏出分解と関東依存の把握
 - 本四架橋や地域区分図を含む論文用地図の作成
 
-論文本文では、四国の一部産業で選択的な競争力強化が生じる一方で、地域全体の価値保持や機能的自立が改善したとは言い切れないという「Structural Sharpening」(著者が命名)を主要な論点として扱っています。本リポジトリは、その主要な定量分析と図表生成を再実行できるよう整理したものです。
+論文本文では、四国の一部産業で選択的な競争力強化が生じる一方で、地域全体の価値保持や機能的自立が改善したとは言い切れないという`structural sharpening`(著者が命名)を主要な論点として扱っています。本リポジトリは、その主要な定量分析と図表生成を再実行できるよう整理したものです。
 
 ### Related Research
-本リポジトリに関連する研究として、四国地域の長期的構造変化を地域間産業連関表と APL、階層ベイズ、GIS 可視化を用いて分析した別プロジェクトがあります。
+関連する研究として、同じく四国の長期的な構造変化を地域間産業連関表で分析しつつ、APLや階層ベイズ、GISによる可視化に重点を置いた別プロジェクトがあります。
 
 - [shikoku-economic-analysis](https://github.com/Naaao9999/shikoku-economic-analysis)
 
-上記リポジトリは、四国地域の長期分析という共通の問題意識を持ちながら、APL（Average Propagation Length）や階層ベイズによる要因分解、動的可視化に重点を置いた関連研究です。本リポジトリは、投稿中論文の再現に焦点を当てたものであり、分析視角と出力物は一部重なりつつも完全には同一ではありません。
+こちらは共通の問題意識を持ちながら、要因分解や動的な可視化に重心を置いています。
 
 ### Research Focus
-本論文は、交通統合、グローバル化、人口減少の初期進行が重なった1985年から2005年の四国を対象に、周辺地域がどのように再編されたのかを検討します。特に、地域の一部産業で競争力の強化がみられても、それが地域全体の価値保持や経済的自立につながるとは限らない、という点を実証的に捉えることを目的としています。
+本研究は、交通の統合、グローバル化、人口減少の初期進行が重なった1985年から2005年の四国を対象に、周辺地域がどう再編されたのかを見ています。特定の産業で競争力や自給率が上がっても、それが地域全体の需要や価値の蓄積に結びつくとは限らない、という点を実証的に捉えるのが狙いです。
 
-論文の主要な問いは、次のように整理できます。
+論文の主要な問いは三つに整理できます。
 
 - 四国では、どの産業で自給率や競争力の改善がみられたのか
 - そうした改善は、地域全体の需要基盤や価値保持の拡大を伴っていたのか
 - 地域内循環の弱まりや域外依存の強まりは、どのような形で進んだのか
 
 ### Methods and Main Perspective
-分析では、地域間産業連関表を35部門に統合したうえで、Skyline analysis、自給率と需要構成比の長期比較、漏出分解、関東依存の把握、空間可視化を組み合わせています。論文中でいう `structural sharpening` は、同一部門の中で自給率が上昇する一方、需要構成比が縮小するようなパターンを識別するための概念です。
+分析では、地域間産業連関表を35部門にまとめ、スカイライン分析、自給率と需要構成比の比較、漏出分解、関東依存の把握、空間可視化を組み合わせます。ここでいう structural sharpening は、同じ部門の中で自給率が上がる一方、需要に占める比率が縮むような動きを捉えるための概念です。
 
-この視点により、単純な生産額や競争力の上昇だけでは見えにくい、次のような構造変化を捉えることを狙っています。
+この枠組みによって、生産額や表面的な競争力の上昇だけでは見えにくい変化が浮かび上がります。
 
 - 選択的な部門強化と地域全体の基盤縮小の併存
 - 地域内保持の弱まりと域外漏出の拡大
 - 生産は残っても高次機能やサービス依存が外部に集中する構造
 
 ### Workflow
-この再現作業は、3つの Notebook を順番に実行する構成です。Notebook 冒頭の説明もこの順序を前提に書かれています。
+3つの Notebook を順番に実行することで再現作業を行うことができる構成です。Notebook 冒頭の説明もこの順序を前提に書かれています。
 
 #### `notebooks/01_data_preprocessing.ipynb`
 論文再現の第1部です。生の地域間産業連関表を、分析で用いる統一部門分類に合わせて前処理・統合します。
@@ -246,7 +246,7 @@ A related project connected to this repository is:
 
 - [shikoku-economic-analysis](https://github.com/Naaao9999/shikoku-economic-analysis)
 
-That repository shares a common interest in long-run structural change in the Shikoku region and places greater emphasis on APL (Average Propagation Length), hierarchical Bayesian decomposition, and GIS-based visualization. The present repository is focused on reproducing the manuscript currently under review, so the analytical framing and outputs overlap only in part and are not identical.
+That repository shares a common interest in long-run structural change in the Shikoku region and places greater emphasis on APL (Average Propagation Length), hierarchical Bayesian decomposition, and GIS-based visualization. 
 
 ### Research Focus
 The main point of the paper is "Structural Sharpening" (a term coined by the authors), which argues that while selective competitiveness has been strengthened in some industries in Shikoku, it cannot be said that the overall value preservation or functional independence of the region has improved. This repository is organized to allow for the re-execution of the main quantitative analysis and the generation of figures and tables.
