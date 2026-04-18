@@ -195,8 +195,6 @@ Notebook の import を確認すると、環境によっては追加で次のパ
 - `adjustText`
 - `shapely`
 
-また、`01_data_preprocessing.ipynb` には `google.colab` 由来の import が含まれています。ローカル Jupyter で実行する場合は、その部分を環境に応じて読み替えてください。
-
 ### Expected Outputs
 実行後、`output/` 配下には少なくとも次の成果物が生成される想定です。
 
@@ -416,8 +414,6 @@ Based on the notebook imports, some environments may additionally require:
 - `japanize-matplotlib`
 - `adjustText`
 - `shapely`
-
-In addition, `01_data_preprocessing.ipynb` contains an import related to `google.colab`. If you run the notebook locally in Jupyter, that part may need to be adapted to your environment.
 
 ### Expected Outputs
 After execution, `output/` is expected to contain at least the following types of artifacts:
