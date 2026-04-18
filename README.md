@@ -5,7 +5,7 @@
 ### Overview
 このリポジトリは、以下の論文の再現用コードをまとめたものです。
 
-**Structural sharpening and functional dependence: a long-run interregional input--output analysis of Shikoku as a peripheral case in Japan**
+**Structural sharpening and functional dependence: a long-run interregional input-output analysis of Shikoku as a peripheral case in Japan**
 
 四国地域を対象に、1985年、1990年、1995年、2005年の経済産業省公表の地域間産業連関表を用いて、長期的な産業構造変化、地域内価値保持、域外依存、空間的可視化を分析します。再現の中心は、論文で用いた3段階の Notebook ワークフローです。
 
